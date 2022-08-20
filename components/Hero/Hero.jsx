@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="bg-slate-900 pt-20 pb-8">
         <div className="max-w-xl md:max-w-4xl lg:max-w-4xl mx-auto flex justify-center items-center">
           <div className="bg-gradient-to-r from-red-300 via-pink-700 via red-600 to-pink-800 background-animate rounded-lg h-1/2 md:h-76 lg:h-72 w-96 md:w-[90%] lg:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 justify-between items-center px-12 py-12 lg:py-0 outline outline-4 outline-red-700/40">
-            <div className="mx-auto object-left ml-4 lg:-ml-12">
+            <div className="mx-auto object-left ml-4 lg:-ml-12 bounce">
               <Image
                 src={"/images/memoji.webp"}
                 width={250}

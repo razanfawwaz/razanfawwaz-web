@@ -11,6 +11,10 @@
   animation: AnimationName 20s ease infinite;
 }
 
+html {
+  background-color: rgb(15 23 42);
+}
+
 @keyframes AnimationName {
   0%,
   100% {
@@ -18,5 +22,21 @@
   }
   50% {
     background-position: 100% 50%;
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-2%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(3%);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }

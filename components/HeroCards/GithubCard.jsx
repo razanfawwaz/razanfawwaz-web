@@ -10,7 +10,7 @@ export default function GithubCard() {
   return (
     <Link href={"https://github.com/razanfawwaz"}>
       <a target={"_blank"}>
-        <div className="relative bg-gradient-to-tr from-blue-600 via-fuschia-600 to-cyan-900 background-animate rounded-lg h-44 w-96 md:w-[98%] lg:w-full flex items-center px-12 py-12 lg:py-0 outline outline-4 outline-blue-800/60">
+        <div className="relative bg-gradient-to-tr from-blue-600 via-fuschia-600 to-cyan-900 background-animate rounded-lg h-44 w-96 md:w-[98%] lg:w-[75%] flex items-center px-12 py-12 lg:ml-28 lg:py-0 outline outline-4 outline-blue-800/60">
           <div className="flex justify-center items-center">
             <div className="-ml-8 -mt-4">
               <p className="text-white font-pjs font-semibold font-md py-2">

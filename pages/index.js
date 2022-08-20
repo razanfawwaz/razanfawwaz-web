@@ -5,7 +5,7 @@ import PageHead from "../components/PageHead";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-slate-900">
       <PageHead pagetitle={"Home"} />
       <Navbar />
       <Hero />

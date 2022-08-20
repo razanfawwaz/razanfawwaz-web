@@ -10,11 +10,11 @@ export default function SpotifyCard() {
   return (
     <Link href={"https://open.spotify.com/user/razanfawwaz"}>
       <a target={"_blank"}>
-        <div className="relative bg-gradient-to-br from-gray-700 via-gray-900 to-slate-600 background-animate rounded-lg h-44 w-96 md:w-[98%] lg:w-full flex items-center px-12 py-12 lg:py-0 outline outline-4 outline-slate-500/30">
+        <div className="relative bg-gradient-to-br from-gray-700 via-gray-900 to-slate-600 background-animate rounded-lg h-44 w-96 md:w-[98%] lg:w-[125%] flex items-center px-12 py-12 lg:py-0 outline outline-4 outline-slate-500/30">
           {data?.isPlaying ? (
             <>
-              <div className="-ml-8 -mt-4">
-                <p className="text-white font-pjs font-semibold py-2">
+              <div className="-ml-4 -mt-4">
+                <p className="text-white font-xs font-pjs font-semibold py-2">
                   Now Listening:
                 </p>
                 <div className="w-20">
@@ -25,10 +25,10 @@ export default function SpotifyCard() {
                   />
                 </div>
               </div>
-              <div className="-ml-2 mt-7">
-                <p className="text-xl text-white font-bold">{data?.title}</p>
-                <p className="text-lg text-white">{data?.album}</p>
-                <p className="text-md text-white">{data?.artist}</p>
+              <div className="ml-4 lg:ml-0 mt-7">
+                <p className="text-lg text-white font-bold">{data?.title}</p>
+                <p className="text-md text-white">{data?.album}</p>
+                <p className="text-sm text-white">{data?.artist}</p>
               </div>
             </>
           ) : (
