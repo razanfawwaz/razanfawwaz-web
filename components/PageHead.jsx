@@ -11,26 +11,26 @@ export default function PageHead({ pagetitle }) {
       />
       <meta
         name="description"
-        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Portfolio Website."
+        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Personal Website."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://razanfawwaz.xyz/" />
       <meta property="og:title" content={`${pagetitle} | razanfawwaz.xyz`} />
       <meta
         property="og:description"
-        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Portfolio Website."
+        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Personal Website."
       />
       <meta property="og:image" content="https://razanfawwaz.xyz/meta.jpg" />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://razanfawwaz.xyz/" />
+      <meta property="twitter:site" content="@razanfawwaz" />
       <meta
         property="twitter:title"
         content={`${pagetitle} | razanfawwaz.xyz`}
       />
       <meta
         property="twitter:description"
-        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Portfolio Website."
+        content="Muhammad Razan Fawwaz, an undergraduate student at Universitas Syiah Kuala. Personal Website."
       />
       <meta
         property="twitter:image"
