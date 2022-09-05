@@ -14,7 +14,7 @@ export default function GithubCard() {
           <div className="flex justify-center items-center">
             <div className="-ml-8 -mt-4">
               <p className="text-white font-pjs font-semibold font-md py-2">
-                Github Profile
+                My GitHub!
               </p>
               <div className="w-20">
                 <img
@@ -24,9 +24,9 @@ export default function GithubCard() {
                 />
               </div>
             </div>
-            <div className="-ml-2 mt-7">
+            <div className="ml-2 mt-7">
               <p className="text-sm text-white">
-                <span className="text-lg font-bold "> {data?.login} </span>
+                <span className="text-lg font-bold "> @{data?.login} </span>
               </p>
               <p className="text-sm text-white">
                 Public Repository:

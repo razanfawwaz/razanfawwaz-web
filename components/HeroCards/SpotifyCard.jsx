@@ -17,9 +17,9 @@ export default function SpotifyCard() {
                 <p className="text-white font-xs font-pjs font-semibold py-2">
                   Now Listening:
                 </p>
-                <div className="w-20">
+                <div className="w-24">
                   <img
-                    className="mt-2 w-20 shadow-sm"
+                    className="mt-2 w-20 lg:w-24 shadow-sm"
                     src={data?.albumImageUrl}
                     alt={data?.album}
                   />
