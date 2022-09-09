@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TechStack from "./TechStack";
+import HeroLink from "../Hero/HeroLink";
 import {
   SiHtml5,
   SiCss3,
@@ -12,6 +13,8 @@ import {
   SiGithub,
   SiVercel,
   SiSupabase,
+  SiGo,
+  SiGooglecloud,
 } from "react-icons/si";
 
 export default function AboutHero() {
@@ -35,24 +38,24 @@ export default function AboutHero() {
               <h1 className="text-4xl lg:text-6xl font-pjs font-extrabold lg:font-bold text-white ">
                 Razan Fawwaz
               </h1>
-              <p className="text-sm mt-2 text-white/80">
-                Undergraduate Informatics Student at{" "}
-                <a
-                  href="https://usk.ac.id"
-                  className="text-orange-100 font-bold no-underline hover:underline-offset-2 hover:underline-blue hover:underline hover:transition-all duration-200"
-                >
-                  Universitas Syiah Kuala
-                </a>
-              </p>
-              <p className="text-sm text-white/80">
-                Co-Founder of{" "}
-                <a
-                  href="https://bersinarproject.com"
-                  className="text-yellow-200 font-bold no-underline hover:underline-offset-2 hover:underline-blue hover:underline hover:transition-all duration-200"
-                >
-                  Bersinar
-                </a>
-              </p>
+              <HeroLink
+                color="text-orange-100"
+                link="https://usk.ac.id"
+                position="Undergraduate Informatics Student at"
+                company="Universitas Syiah Kuala"
+              />
+              <HeroLink
+                color="text-orange-200"
+                link="https://bersinarproject.co.id"
+                position="Co-Founder"
+                company="Bersinar"
+              />
+              <HeroLink
+                color="text-green-300"
+                link="https://gdsc.community.dev/syiah-kuala-university/"
+                position="Chapter Lead"
+                company="Google Developer Student Club - USK"
+              />
             </div>
           </div>
         </div>
@@ -68,7 +71,7 @@ export default function AboutHero() {
             Passionate in Web-Dev, Design, and watching Aircrash Investigation.
           </p>
         </div>
-        <div className="max-w-4xl mx-auto flex justify-between items-center py-4 grid grid-cols-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="max-w-lg mx-auto flex justify-between items-center py-4 grid grid grid-cols-1 ">
           <div className="">
             <p className="font-pjs text-4xl text-white font-bold underline decoration-sky-500 text-center">
               Tech Stack
@@ -77,7 +80,7 @@ export default function AboutHero() {
               Tech stack that I currently learn and use.
             </p>
           </div>
-          <div className="grid grid-cols-2 py-4 md:py-0 lg:py-0 xl:py-0 gap-0 lg:gap-2">
+          <div className="grid grid-cols-2 py-4 mt-4 md:py-0 lg:py-0 xl:py-0 gap-0 lg:gap-2">
             <TechStack title="HTML">
               <SiHtml5 />
             </TechStack>
@@ -93,6 +96,9 @@ export default function AboutHero() {
             <TechStack title="ReactJS">
               <SiReact />
             </TechStack>
+            <TechStack title="Golang">
+              <SiGo />
+            </TechStack>
             <TechStack title="PHP">
               <SiPhp />
             </TechStack>
@@ -104,6 +110,9 @@ export default function AboutHero() {
             </TechStack>
             <TechStack title="Github">
               <SiGithub />
+            </TechStack>
+            <TechStack title="Google Cloud">
+              <SiGooglecloud />
             </TechStack>
             <TechStack title="Vercel">
               <SiVercel />

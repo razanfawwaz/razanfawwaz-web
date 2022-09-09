@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import HeroLink from "./HeroLink";
 
 export default function Hero() {
   return (
@@ -22,24 +23,25 @@ export default function Hero() {
               <h1 className="text-4xl lg:text-6xl font-pjs font-extrabold lg:font-bold text-white ">
                 Razan Fawwaz
               </h1>
-              <p className="text-sm mt-2 text-white/80">
-                Undergraduate Informatics Student at{" "}
-                <a
-                  href="https://usk.ac.id"
-                  className="text-orange-100 font-bold no-underline hover:underline-offset-2 hover:underline-blue hover:underline hover:transition-all duration-200"
-                >
-                  Universitas Syiah Kuala
-                </a>
-              </p>
-              <p className="text-sm text-white/80">
-                Co-Founder of{" "}
-                <a
-                  href="https://bersinarproject.com"
-                  className="text-yellow-200 font-bold no-underline hover:underline-offset-2 hover:underline-blue hover:underline hover:transition-all duration-200"
-                >
-                  Bersinar
-                </a>
-              </p>
+
+              <HeroLink
+                color="text-orange-100"
+                link="https://usk.ac.id"
+                position="Undergraduate Informatics Student at"
+                company="Universitas Syiah Kuala"
+              />
+              <HeroLink
+                color="text-orange-200"
+                link="https://bersinarproject.co.id"
+                position="Co-Founder"
+                company="Bersinar"
+              />
+              <HeroLink
+                color="text-green-300"
+                link="https://gdsc.community.dev/syiah-kuala-university/"
+                position="Chapter Lead"
+                company="Google Developer Student Club - USK"
+              />
             </div>
           </div>
         </div>
