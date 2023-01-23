@@ -1,0 +1,44 @@
+---
+import Card from "./Card.astro";
+
+const datas = [
+  {
+    title: "Bersinar",
+    body: "Co-Founder",
+    href: "https://bersinarproject.com",
+    techStack: [""],
+  },
+  {
+    title: "Bersinar",
+    body: "Manager of IT (Dec 2020-Jun 2022)",
+    href: "https://bersinarproject.com",
+    techStack: [""],
+  },
+  {
+    title: "Bersinar",
+    body: "Backend Developer (Dec 2022 - Now)",
+    href: "https://bersinarproject.com",
+    techStack: [""],
+  },
+  {
+    title: "Google Developer Student Clubs - Universitas Syiah Kuala",
+    body: "Chapter Lead (Aug 2022 - Now)",
+    href: "https://gdscusk.com",
+    techStack: [""],
+  },
+];
+---
+
+{
+  datas.map((data) => (
+    <div class="mb-2 mt-2">
+      <Card
+        title={data.title}
+        body={data.body}
+        href={data.href}
+        tags=""
+        techStack={data.techStack}
+      />
+    </div>
+  ))
+}

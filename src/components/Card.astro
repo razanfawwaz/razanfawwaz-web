@@ -11,7 +11,7 @@ const { href, title, body, tags, techStack } = Astro.props;
 ---
 
 <li
-  class="group relative list-none rounded-lg dark:hover:bg-zinc-600 hover:bg-zinc-300/50 transition ease-in-out duration-300 p-4"
+  class="group relative list-none rounded-lg dark:hover:bg-zinc-600 hover:bg-zinc-300/50 transition ease-in-out duration-300 p-2"
 >
   <a href={href} target="_blank">
     <h2 class="my-2 text-zinc-800 dark:text-zinc-200 text-lg font-bold">
@@ -38,10 +38,13 @@ const { href, title, body, tags, techStack } = Astro.props;
         )
       }
     </ul>
-    <p
-      class="bg-teal-700 dark:bg-teal-500/50 w-1/5 rounded-md my-2 text-center py-1 text-zinc-200 text-sm font-semibold absolute bottom-0 right-2 drop-shadow-lg hover:drop-shadow-none"
-    >
-      {tags}
-    </p>
+
+    {
+      tags && (
+        <p class="bg-teal-700 dark:bg-teal-500/50 p-2 rounded-md my-2 text-center py-1 text-zinc-200 text-sm font-semibold lg:absolute lg:bottom-0 lg:right-2 drop-shadow-lg hover:drop-shadow-none">
+          {tags}
+        </p>
+      )
+    }
   </a>
 </li>

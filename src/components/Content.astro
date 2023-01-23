@@ -1,13 +1,14 @@
 ---
-import ActivitesCard from "./ActivitesCard.astro";
+import ActivitiesCard from "./ActivitiesCard.astro";
 import ProjectsCard from "./ProjectsCard.astro";
+import RocketLaunch from "astro-heroicons/solid/RocketLaunch.astro";
 ---
 
-<div
-  class="bg-zinc-100 dark:bg-zinc-800 border-b border-b-2 border-gray-200/40 py-4"
->
+<div class="bg-zinc-100 dark:bg-zinc-900 py-4">
   <div class="relative px-4 sm:px-8 lg:px-12">
-    <div class="mx-auto max-w-xl lg:max-w-5xl">
+    <div
+      class="mx-auto max-w-4xl lg:max-w-5xl -mt-12 -mb-4 p-12 border-x-2 border-t-2 border-gray-200/40 dark:bg-zinc-800"
+    >
       <h1
         class="mt-2 max-w-2xl text-4xl font-bold break-normal tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl z-40"
       >
@@ -37,10 +38,13 @@ import ProjectsCard from "./ProjectsCard.astro";
             More on Github
           </a>
         </div>
-        <div class="mt-8">
-          <div class="mb-4 w-1/2">
-            <ActivitesCard />
-          </div>
+        <div class="mt-8 border border-2 border-zinc-600 h-min px-2 rounded-lg">
+          <h1
+            class="my-4 mx-2 text-2xl text-zinc-800 dark:text-zinc-100 font-semibold"
+          >
+            Experiences
+          </h1>
+          <ActivitiesCard />
         </div>
       </div>
     </div>
