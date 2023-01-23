@@ -1,0 +1,55 @@
+---
+import Card from "./Card.astro";
+
+const datas = [
+  {
+    title: "Charum",
+    body: "Social Media for Everyone! a capstone project from Alterra Bacth 3",
+    href: "https://github.com/ChaRum-Capstone-Project-Batch-3/Backend",
+    tags: "Backend",
+    techStack: ["Golang", "Echo", "MongoDB"],
+  },
+  {
+    title: "Bersinar Project",
+    body: "Bersinar Project Website & SEO management",
+    href: "https://bersinarproject.com",
+    tags: "Frontend",
+    techStack: ["React", "React-Bootstrap"],
+  },
+  {
+    title: "HiEduTech-CaseStudy-SE",
+    body: "This is a study case project repository for the Software Engineering Data Specialist from HiEduTech (Wartek).",
+    href: "https://github.com/razanfawwaz/HiEduTech-CaseStudy-SE",
+    tags: "Data",
+    techStack: ["Golang", "SQLite", "PostgreSQL"],
+  },
+  {
+    title: "MagangMerdeka",
+    body: "Prepare your MSIB more easier!",
+    href: "https://msib.razanfawwaz.xyz",
+    tags: "Data",
+    techStack: ["Softr", "Airtable", "Spreadsheet"],
+  },
+  {
+    title: "go-shortener",
+    body: "A URL shortener service written in Go. This service is a part of the Mini Project Alta Kampus Merdeka Batch 3.",
+    href: "https://github.com/razanfawwaz/go-shortener",
+    tags: "Backend",
+    techStack: ["Golang", "Echo", "MySQL", "Gorm"],
+  },
+];
+---
+
+{
+  datas.map((data) => (
+    <div class="mb-4 mt-2">
+      <Card
+        title={data.title}
+        body={data.body}
+        href={data.href}
+        tags={data.tags}
+        techStack={data.techStack}
+      />
+    </div>
+  ))
+}

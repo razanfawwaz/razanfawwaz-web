@@ -1,0 +1,52 @@
+---
+import ActivitiesCard from "./ActivitiesCard.astro";
+import ProjectsCard from "./ProjectsCard.astro";
+import RocketLaunch from "astro-heroicons/solid/RocketLaunch.astro";
+---
+
+<div class="bg-zinc-100 dark:bg-zinc-900 py-4">
+  <div class="relative px-4 sm:px-8 lg:px-12">
+    <div
+      class="mx-auto max-w-4xl lg:max-w-5xl -mt-12 -mb-4 p-12 border-x-2 border-t-2 border-gray-200/40 dark:bg-zinc-800"
+    >
+      <h1
+        class="mt-2 max-w-2xl text-4xl font-bold break-normal tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl z-40"
+      >
+        It's not about the <span
+          class="text-teal-600 dark:text-teal-300 underline underline-4 hover:opacity-75"
+          >destination</span
+        >, it's about the <span
+          class="text-teal-600 dark:text-teal-300 underline underline-4 hover:opacity-75"
+          >journey and the lessons</span
+        >
+        we learn along the way.
+      </h1>
+      <div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div
+          class="mt-8 w-full outline outline-2 outline-zinc-600 px-2 rounded-lg"
+        >
+          <h1
+            class="my-4 mx-2 text-2xl text-zinc-800 dark:text-zinc-100 font-semibold"
+          >
+            Latest Projects
+          </h1>
+          <ProjectsCard />
+          <a
+            href="https://github.com/razanfawwaz"
+            class="text-center flex justify-center underline underline-offset-2 items-center my-12 mx-22 sm:mx-36 rounded-md text-teal-500 font-semibold drop-shadow-lg hover:opacity-75"
+          >
+            More on Github
+          </a>
+        </div>
+        <div class="mt-8 border border-2 border-zinc-600 h-min px-2 rounded-lg">
+          <h1
+            class="my-4 mx-2 text-2xl text-zinc-800 dark:text-zinc-100 font-semibold"
+          >
+            Experiences
+          </h1>
+          <ActivitiesCard />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
